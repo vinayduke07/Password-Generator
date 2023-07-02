@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="passwordBox">
+                <h2> Password Generator</h2>
+                <div class="password-value-container">
+                    <p id="password"> Fvvd#*U0I2N*Bv86G</p>
+                    <i class="far fa-clone" onclick="copyPassword()" aria-hidden="true"></i>
+                </div>
+                <div class="option-container">
+                    <div class="option">
+                        <label for="length">Total Length</label>
+                        <input type="number" id="length" min="5" max="32">
+                    </div>
+                    <div class="option">
+                        <label for="symbol">Include Symbol</label>
+                        <input type="checkbox" id="symbol">
+                    </div>
+                    <div class="option">
+                        <label for="number">Include Number</label>
+                        <input type="checkbox" id="number">
+                    </div>
+                    <div class="option">
+                        <label for="upperCase">Include Uppercase</label>
+                        <input type="checkbox" id="upperCase">
+                    </div>
+                    <div class="option">
+                        <label for="lowerCase">Include lowercase</label>
+                        <input type="checkbox" id="lowerCase">
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button id="generatePassword" onclick="generatePassword()">Generate Password</button>
+                </div>
+            </div>
+        </div>
+        <script src="Password.js"></script>
+        <script src="./App_files/4e07701ab0.js.download" crossorigin="anonymous"></script>
+    </body>
+
+</html>
